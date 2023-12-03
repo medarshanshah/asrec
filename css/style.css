@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #ddd;
 }
 
 ul {
@@ -57,6 +58,7 @@ ul {
 
 .desktop-main-menu ul {
   display: flex;
+  justify-content: space-between;
 }
 
 .desktop-main-menu ul li {
@@ -85,63 +87,6 @@ ul {
   transition-duration: 0.4s;
 }
 
-/* Sections */
-section {
-  position: relative;
-  height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-transform: uppercase;
-}
-
-.section-inner {
-  position: absolute;
-  bottom: 200px;
-  left: 150px;
-  max-width: 560px;
-}
-
-.section-inner h4 {
-  font-size: 22px;
-  margin-bottom: 5px;
-  font-weight: 300;
-  animation: fadeInUp 0.5s ease-in-out;
-}
-
-.section-inner h2 {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both;
-}
-
-.section-inner a {
-  animation: fadeInUp 0.5s ease-in-out 0.4s;
-  animation-fill-mode: both; 
-}
-
-/* Background images */
-.section-a {
-  background-image: url('../img/section-a.webp');
-}
-.section-b {
-  background-image: url('../img/section-b.webp');
-}
-.section-c {
-  background-image: url('../img/section-c.webp');
-}
-.section-d {
-  background-image: url('../img/section-d.webp');
-}
-.section-e {
-  background-image: url('../img/section-e.webp');
-}
-.section-f {
-  background-image: url('../img/section-f.webp');
-}
-
 .btn {
   position: relative;
   display: inline-block;
@@ -150,7 +95,12 @@ section {
   min-width: 130px;
   padding: 15px 50px;
   margin-top: 10px;
-  border: 2px solid #fff;
+  background: rgba(85, 30, 112, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(136, 68, 170, 0.73);
   text-transform: uppercase;
   font-weight: bold;
   overflow: hidden;
@@ -199,7 +149,7 @@ footer ul {
 
 footer ul li {
   margin-right: 30px;
-  color: #aaa;
+  color: #ddd;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 2.5;
@@ -211,12 +161,8 @@ footer ul li {
 }
 
 /* Inner Pages */
-.bg-falcon-9 {
-  background-image: url('../img/falcon-9.webp');
-}
-
-.bg-falcon-heavy {
-  background-image: url('../img/falcon-heavy.webp');
+.bg-coming-soon {
+  background-image: url('../img/planet-in-a-colorful-outer-space-1e4f2o2mmscz9h1b.webp');
 }
 
 .bg-asteroid {
@@ -373,6 +319,13 @@ footer ul li {
   width: 70%;
 }
 
+.banner-info {
+  position: relative;
+  padding: 5% 10%;
+  left: 5%;
+  width: 70%;
+}
+
 .info img {
   height: auto;
   max-width: 100%;
@@ -390,8 +343,41 @@ header
 	height: 100vh;
 	z-index: 0;
 	font-family: Calibri, Verdana, sans-serif;
-  background: rgb(53,19,154);
-  background: linear-gradient(75deg, rgba(53,19,154,1) 0%, rgba(96,12,140,0.9500175070028011) 64%);
+  background-image: url('../img/planet-in-a-colorful-outer-space-1e4f2o2mmscz9h1b.webp');
+}
+
+.intro {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  top: 5%;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.intro > h1 {
+  margin: 20px;
+  text-align: center;
+  width: fit-content;
+}
+
+.banner {
+  margin: 20px;
+  padding: 20px;
+  text-align: justify;
+  width: auto;
+  height: max-content;
+  background: rgba(85, 30, 112, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(136, 68, 170, 0.73);
+  color: #eee;
 }
 
 header::before,
@@ -433,8 +419,7 @@ footer > section > img, footer > aside > span > img {
 footer {
   z-index: 0;
   width: 100%;
-  background: rgb(53,19,154);
-  background: linear-gradient(75deg, rgba(53,19,154,1) 0%, rgba(96,12,140,0.9500175070028011) 64%);
+  background-image: url('../img/star-nebula-glow-4wivtu5hrcjbzz7q.jpg');
   font: 0.75rem helvetica,sans-serif;
   color: var(--light);
   display: flex;
