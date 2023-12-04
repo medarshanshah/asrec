@@ -54,7 +54,10 @@ ul {
 }
 
 .logo h1 {
-  margin-left: 10%;
+  margin-left: 5%;
+  text-transform: capitalize;
+  font-size: small;
+  width: 40%;
 }
 
 /* Desktop Menu */
@@ -456,7 +459,6 @@ footer {
   }
 }
 
-
 #emblem-span img {
   width: 40%;
   height: auto;
@@ -465,5 +467,8 @@ footer {
 
 #emblem-span h2 {
   margin: 2%;
+  text-transform: capitalize;
+  font-size: medium;
+  width: 75%;
 }
 
