@@ -41,14 +41,20 @@ ul {
 
 /* Logo */
 .logo {
-  width: 80px;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .logo img {
   display: block;
-  width: 100%;
+  width: 80px;
   height: auto;
+}
+
+.logo h1 {
+  margin-left: 10%;
 }
 
 /* Desktop Menu */
@@ -110,7 +116,6 @@ ul {
 /* Footer */
 footer {
   position: relative;
-  padding: 55px 0;
 }
 
 footer ul {
@@ -450,3 +455,15 @@ footer {
     gap: 1rem;
   }
 }
+
+
+#emblem-span img {
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+}
+
+#emblem-span h2 {
+  margin: 2%;
+}
+
